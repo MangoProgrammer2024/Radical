@@ -2,17 +2,10 @@
 
 int c_nFaceId = 0;
 
-class Face : public Plane {
-public:
-	Face();
-	virtual ~Face();
-	Face& GlobalFacePrimit;
-	bool GlobalPrimitMode(Face* face);
-};
 /*
-================
-  FACE GLOBALS
-================
+================================
+	   FACE GLOBALS
+================================
 */
 const char* FaceGlobals(Face* face) {
 	static char faceBuffer[1024];
@@ -20,8 +13,18 @@ const char* FaceGlobals(Face* face) {
 	if (face->GlobalFacePrimit.GlobalPrimitMode(face)) {
 		sysprintf("Face", face, FaceGlobals);
 		sprintf(faceBuffer, "Face", FaceGlobals);
-    
+
 		return faceBuffer;
 	};
-  
+
 };
+/*
+============================
+	MALLOC FACE
+============================
+*/
+Face* AllocFace() {
+	Face* f = (Face*)malloc(sizeof(Face));
+	return f;
+};
+
