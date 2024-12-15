@@ -1,2 +1,2 @@
-# Radical
-Radical Map editor
+# QtRadical
+ Map editor
