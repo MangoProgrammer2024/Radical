@@ -5,9 +5,9 @@ int c_nPlaneId = 0;
 #define C
 
 /*
-===========
+==========================
 	PLANE NAME
-===========
+==========================
 */
 const char* PlaneName(Plane* plane) {
 	static char pBuff[1024];
@@ -20,18 +20,18 @@ const char* PlaneName(Plane* plane) {
 	};
 };
 /*
-============
+=========================
 	ALLOC PLANE
-============
+=========================
 */
 Plane* AllocPlane() {
 	Plane* p = (Plane*)malloc(sizeof(Plane));
 	return p;
 };
 /*
-============
+========================
 	 PRINT PLANE
-============
+========================
 */
 void PrintPlane(Plane* plane) {
 	int i;
