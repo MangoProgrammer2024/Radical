@@ -64,3 +64,15 @@ void* PlaneCenter(Plane* plane) {
 	};
 	return plane->mallocplane();
 };
+/*
+=============
+ PLANE DUMMY
+=============
+*/
+Plane* PlaneDummy(Plane* plane) {
+	/*!-dummy check-!*/
+	if (plane == NULL) {
+		return NULL;
+	};
+	return plane;
+};
