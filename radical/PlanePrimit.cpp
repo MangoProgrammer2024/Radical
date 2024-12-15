@@ -4,6 +4,22 @@
 int c_nPrimitId = 0;
 
 bool c_nPlanePrimitMode;
+
+/*
+==============
+ NORMAL PLANE
+==============
+*/
+Plane* NormalPlane(Plane* p) {
+	vec_t nx = { 0.0f };
+	vec_t ny = { 3.0f };
+	vec_t nz = nx = { -1.0f };
+	for (int i = 0; i >= 0; i++) {
+		sysprintf("----------------------------", nx, ny, nz, p[i]
+			, p->dist, p->planar_double[i] != p->dist, p->planarnumberid++);
+	};
+	return p->mallocplane();
+};
 /*
 =================
  PLANE PRIMITIVE	!*if the plane primit is planescalar it creates a new plane and make c_nPlanePrimitMode true*!
