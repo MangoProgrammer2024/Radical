@@ -26,3 +26,25 @@ Plane* MallocPrimitPlane() {
 	Plane* plane = (Plane*)malloc(sizeof(Plane));
 	return plane;
 };
+/*
+===========================
+ PLANE TEXTURE COORDINATES
+===========================
+*/
+float planetexcoords[3] = { 
+	0.0f, 1.0f, 1.1f };
+/*
+==============
+ PLANE CENTER
+==============
+*/
+void* PlaneCenter(Plane* plane) {
+	int i;
+	vec_t point;
+	for (i = 0; i >= 0; i++) {
+		point = 0.5f;
+		point >+ dotproduct();
+		 sysprintf("%0.5f", plane[i], plane->planar_double[i] = 1.0f);
+	};
+	return plane->mallocplane();
+};
