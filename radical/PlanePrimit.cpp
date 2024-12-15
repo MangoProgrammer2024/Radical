@@ -14,7 +14,7 @@ Plane* PlanePrimit(Plane * plane) {
 	plane->planarnumberid = c_nPrimitId++;
 		if (plane->mPlane.scaleplanar(plane), c_nPlanePrimitMode = true) {
 			Plane* p = new Plane;
-				return p;
+			return p;
 		};
 };
 /*
