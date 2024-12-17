@@ -13,6 +13,8 @@ double dist = 0.5f;
 
 Plane3(nx, ny, nz, dist);
 
+const char * const PlaneName(Plane3 * current);
+
 };
 
 #endif
