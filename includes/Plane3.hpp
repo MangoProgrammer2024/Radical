@@ -10,10 +10,10 @@ Vector ny;
 Vector nz;
 
 double dist = 0.5f;
-
 Plane3(nx, ny, nz, dist);
+//plane typedef classes
+typedef class<Plane3>plane3;
 
-const char * const PlaneName(Plane3 * current);
 
 };
 
