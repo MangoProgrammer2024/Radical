@@ -15,6 +15,10 @@ public:
     double Max = 1025.0f;
     float Near = 45.0f;
     void AddRenderScene(camera_t * c);
+    vec3_t up;
+    vec3_t down;
+    vec3_t left;
+    vec3_t right;
     vec3_t position;
 
 };
