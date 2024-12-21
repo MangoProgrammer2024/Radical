@@ -28,7 +28,7 @@ public:
     int CAM_W = 100;
     bool RefreshWindow(QWindow * window);
 
-        #define CAMERAWND_COLOR_RGB
+    #define CAMERAWND_COLOR_RGB
 
     static float camera_globalstream_color();
     void CameraGlWidget(QOpenGLContext * glwidget, QWindow * Widget);
