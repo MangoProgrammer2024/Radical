@@ -3,6 +3,8 @@
 
 #include "libs/mathlib.h"
 
+#define MAX_FACES 16
+
 class brush_t{
 public:
 
@@ -14,8 +16,6 @@ public:
     vec3_t mins, maxs;
 
     vec3_t angle;
-
-    #define MAX_FACES 16
 
 };
 

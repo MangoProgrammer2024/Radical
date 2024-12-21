@@ -11,8 +11,8 @@ public:
 
     bool textureInit(texture_t * t);
 
-    static float _TEX_X;
-    static float _TEX_Y;
+    static float _TEX_W;
+    static float _TEX_H;
 
     const char * tTextureName;
     std::size_t TextureSize() = 0;
