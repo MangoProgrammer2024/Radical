@@ -38,6 +38,7 @@ public:
     static float CAM_FRUSTUM;
     vec3_t lighting_coords; vec3_t texture_coords; vec3_t render_meshes;
     void Camera_GlobalInsertVectorStream(vec3_t * vector);
+    CamWnd&m_bCamWnd;
 
 };
 
