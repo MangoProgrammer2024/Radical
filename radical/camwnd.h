@@ -4,6 +4,7 @@
 #include <QOpenGLContext>
 #include "ui_mainframe.h"
 #include "libs/mathlib.h"
+#include <QLabel>
 
 class CamWnd{
 public:
