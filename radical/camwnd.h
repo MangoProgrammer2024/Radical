@@ -33,7 +33,7 @@ public:
     static float camera_globalstream_color();
     void CameraGlWidget(QOpenGLContext * glwidget, QWindow * Widget);
     void Widget_GlobalStream(QWidget * widget, const char * _class, QWindow * window);
-    void insert_command(QAction * command, QWindow * window);
+    void camwindow_insert_command(QAction * command, QWindow * window);
 
     static float CAM_FRUSTUM;
     vec3_t lighting_coords; vec3_t texture_coords; vec3_t render_meshes;
