@@ -39,6 +39,7 @@ public:
     vec3_t lighting_coords; vec3_t texture_coords; vec3_t render_meshes;
     void Camera_GlobalInsertVectorStream(vec3_t * vector);
     CamWnd&m_bCamWnd;
+    void CameraColor_Stream(QWindow * window, QOpenGLContext * context, QColor * rgb);
 
 };
 
