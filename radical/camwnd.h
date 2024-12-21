@@ -40,6 +40,7 @@ public:
     void Camera_GlobalInsertVectorStream(vec3_t * vector);
     CamWnd&m_bCamWnd;
     void CameraColor_Stream(QWindow * window, QOpenGLContext * context, QColor * rgb);
+    void m_bCameraSysprintf(const char * _format, QWindow * window, static char * buffer);/*---needs buffer format---*/
 
 };
 
