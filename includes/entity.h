@@ -53,6 +53,10 @@ public:
 
     std::size_t * Entity_InvalidSize = 0;
 
+    void Entity_ConstructToolbar(entity_t * entity, QToolBar * toolbar);
+    void Entity_ConstructCommand(entity_t * entity, QAction * command);
+    void Entity_ConstructMenu(entity_t * entity, QMenu * menu);
+
     int Spawnflags;
     int * g_nCallFlags;
 
