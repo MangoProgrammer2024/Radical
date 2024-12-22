@@ -4,7 +4,7 @@
 class entity_t{
 public:
     entity_t();
-    virtual ~entity();
+    virtual ~entity_t();
 };
 
 #endif // ENTITY_H

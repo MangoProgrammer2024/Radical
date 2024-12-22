@@ -54,7 +54,7 @@ public:
         Free, Winding, Primitive
     }brushmode;
 
-    bool m_bBrushPrimitMode(brush_t& m_bBrush);
+    bool m_bBrushPrimitMode;
 
     /*---Brush Build Stuff---*/
     Brush_Build( brush_t * brush, int sides, std::size_t * brushsize, const char * key, const char * value, bool buildbrush, int _numberid);
@@ -65,9 +65,7 @@ public:
     //view types for brush
     enum{
         BRUSH_XY,
-        BRUSH_YX,
-        BRUSH YZ
-    }iBrushView;
+        BRUSH_YX}iBrushType;
 
     brush_t&m_bBrushModuleViewObservor;
     /*---Brush Clip Tools---*/
@@ -103,9 +101,8 @@ public:
     bool Brush_IsHollow(brush_t * b);
     virtual void * Construct_Brush(brush_t * b, int mBrushType) = 0;
 
-    void * sysbrushprintf(brush_t * b, const char * _format, int _id);
-
-
 };
+
+ void sysbrushprintf(brush_t * _b, const char * _format, int _id);
 
 #endif // BRUSH_H

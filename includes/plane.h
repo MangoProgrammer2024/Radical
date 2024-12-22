@@ -16,7 +16,7 @@ public:
 
     vec3_t planerads_angle;
 
-    int numpoints;
+    int numpoints[3];
     int windingpoints;
 
     plane_t * current;

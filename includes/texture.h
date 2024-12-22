@@ -15,7 +15,7 @@ public:
     static float _TEX_H;
 
     const char * tTextureName;
-    std::size_t TextureSize() = 0;
+    std::size_t TextureSize;
 
     void AddTexture(texture_t * t, bool _init, const char * tFilename, std::size_t * TSize);
 
