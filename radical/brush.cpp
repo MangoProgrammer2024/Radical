@@ -22,7 +22,7 @@ const char * RadicalprintfBrush(brush_t * b){
     ALLOC BRUSH
 ===================
 */
-brush_t * MallocBrush(){
+brush_t * AllocBrush(){
     brush_t * b = (brush_t*)malloc(sizeof(brush_t));
      return b;
 };
