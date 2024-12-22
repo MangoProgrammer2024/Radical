@@ -17,7 +17,7 @@ public:
     void i_global_file(QFile * file, const char * iFileName, std::size_t * filesize);
     enum{ ibrushfile, ientityfile, imiscfile, itexturefile, ishaderfile, imodelfile, imapfile, ibmpfile }iFileType;
     void i_data(QDataStream * data, idata * i);
-    void i_globaltype(idata * data, enum * _type);
+    void i_globaltype(idata * data, int * _type);
 
     bool iFlush_Data(idata * data){
         data->dataSize == NULL;

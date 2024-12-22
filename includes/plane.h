@@ -1,6 +1,7 @@
 #ifndef PLANE_H
 #define PLANE_H
 
+#include "texture.h"
 #include "libs/mathlib.h"
 
 class plane_t{
@@ -22,6 +23,9 @@ public:
     plane_t * current;
 
     int maxpoints[8][5];
+
+    void planeshader(plane_t * p, texture_t * texdef);
+    bool * shadeplane(plane_t * p);
 
 };
 

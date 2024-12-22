@@ -4,6 +4,7 @@
 #include "face.h"
 #include "entity.h"
 #include "texture.h"
+#include "idata.h"
 #include "winding.h"
 #include "plane.h"
 #include "libs/mathlib.h"
@@ -65,7 +66,7 @@ public:
     //view types for brush
     enum{
         BRUSH_XY,
-        BRUSH_YX}iBrushType;
+        BRUSH_YX}iBrushType_n;
 
     brush_t&m_bBrushModuleViewObservor;
     /*---Brush Clip Tools---*/
