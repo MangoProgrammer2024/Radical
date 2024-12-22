@@ -103,6 +103,8 @@ public:
     bool Brush_IsHollow(brush_t * b);
     virtual void * Construct_Brush(brush_t * b, int mBrushType) = 0;
 
+    void * sysbrushprintf(brush_t * b, const char * _format, int _id);
+
 
 };
 
