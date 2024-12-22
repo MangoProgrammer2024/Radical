@@ -37,15 +37,12 @@ public:
     void camwindow_insert_command(QAction * command, QWindow * window);
 
     static float CAM_FRUSTUM;
-
     vec3_t lighting_coords; vec3_t texture_coords; vec3_t render_meshes;
     void Camera_GlobalInsertVectorStream(vec3_t * vector);
     CamWnd&m_bCamWnd;
-
     void CameraColor_Stream(QWindow * window, QOpenGLContext * context, QColor * rgb);
     void m_bCameraSysprintf(const char * _format, QWindow * window, char * _buffer);/*---needs buffer format---*/
     void construct_camwnd_toolbar(QWindow * window, QToolBar * camtoolbar);
-
     static float CameraWnd_Tick;
     const char * Camwnd_GlobalStream_Label(QWindow * window, QLabel * label);
     void CameraWnd_GlobalOutputStream(QWindow * window, QWidget * console, QString& camwndmsg);
