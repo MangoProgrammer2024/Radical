@@ -3,6 +3,9 @@
 
 #include <string>
 #include "brush.h"
+#include <QToolBar>
+#include <QMenu>
+#include <QAction>
 
 class entity_t{
 public:
