@@ -101,7 +101,7 @@ public:
     bool Brush_IsConstructive(brush_t * b);
     bool Brush_IsCaulked(brush_t * b);
     bool Brush_IsHollow(brush_t * b);
-    virtual void * Construct_Brush(brush_t * b, int mBrushType = 0;
+    virtual void * Construct_Brush(brush_t * b, int mBrushType) = 0;
 
 
 };
